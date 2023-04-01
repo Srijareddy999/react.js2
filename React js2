@@ -12,7 +12,8 @@ function App(){
 return (
 <main>
 <Routes>
-<Route path = "/"Component={About}/>
+<Route path = "/"Component={Home}/>
+<Route path = "/about"Component={About}/>
 </Routes>
 <Navbar/>
 </main>
@@ -26,11 +27,16 @@ function Home(){
 return(<h1>This is home page</h1>)
 }
 export default Home;
+
 function Navbar(){
 return(
 <div>
 <div>
 <Link to="/">Home</Link>
+</div>
+<br></br>
+<div>
+<Link to="/about">About</Link>
 </div>
 </div>
 )
